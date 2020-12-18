@@ -17,8 +17,8 @@ class App extends React.Component {
           onClick={() => {
             this.setState({
               total: this.state.total + 1,
-              total2: this.state.total + 2,
-              total3: this.state.total + 5,
+              total2: this.state.total2 + 2,
+              total3: this.state.total3 + 5,
             })
           }}
         >
