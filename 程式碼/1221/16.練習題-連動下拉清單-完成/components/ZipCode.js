@@ -47,7 +47,7 @@ function ZipCode() {
       </select>
       <span>
         {/* 當縣市(country)和區域(township)同時有>-1的值時，才呈現postcode */}
-        {/* `條件 && 求值呈現` 相當於`if(條件) 求值呈現`的簡寫法 */}
+        {/* `條件 && 求值呈現` 相當於`if(條件) 求值呈現`的簡寫法，只有React JSX中可以用*/}
         {country > -1 && township > -1 && postcodes[country][township]}
       </span>
     </>
