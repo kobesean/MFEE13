@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 function ButtonOne(props) {
+  // One的內部資料(狀態)
   const [oneData, setOneData] = useState('One')
 
   return (

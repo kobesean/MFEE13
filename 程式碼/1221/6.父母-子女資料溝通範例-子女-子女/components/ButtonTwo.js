@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 
 function ButtonTwo(props) {
+  // Two的內部資料(狀態)
   const [twoData, setTwoData] = useState('Two')
+
   return (
     <>
       {/* 子女->子女：利用父母元件傳來的props呈現資料 */}
