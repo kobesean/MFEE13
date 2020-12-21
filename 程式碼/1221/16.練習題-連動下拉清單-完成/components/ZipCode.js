@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { countries, townships, postcodes } from '../data'
 
 function ZipCode() {
-  // 記錄資料陣列的索引值
+  // 記錄資料陣列的目前被選中的索引值
   const [country, setCountry] = useState(-1)
   const [township, setTownship] = useState(-1)
 
@@ -36,8 +36,8 @@ function ZipCode() {
       >
         {/* 預設值為-1 */}
         <option value={-1}>請選擇區域</option>
-        {/* 從countries提取縣市資料，索引值當作option的值 */}
-        {/* 要檢查country會有-1的情況 */}
+        {/* 從townships提取區域資料，索引值當作option的值 */}
+        {/* 要檢查country會有-1的情況，country大於-1才要執行 */}
         {country > -1 &&
           townships[country].map((v, i) => (
             <option value={i} key={i}>
@@ -46,6 +46,8 @@ function ZipCode() {
           ))}
       </select>
       <span>
+        {/* 當縣市(country)和區域(township)同時有>-1的值時，才呈現postcode */}
+        {/* `條件 && 求值呈現` 相當於`if(條件) 求值呈現`的簡寫法 */}
         {country > -1 && township > -1 && postcodes[country][township]}
       </span>
     </>
