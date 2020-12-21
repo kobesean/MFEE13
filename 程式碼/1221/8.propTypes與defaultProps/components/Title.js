@@ -10,7 +10,7 @@ function Title(props) {
   )
 }
 
-// props的類型
+// props的類型檢查用
 Title.propTypes = {
   text: PropTypes.string,
   color: PropTypes.string,
