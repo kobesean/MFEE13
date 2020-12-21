@@ -4,6 +4,7 @@ import { countries, townships, postcodes } from '../data'
 function ZipCode() {
   console.log(countries)
   console.log(townships)
+  // 記錄資料陣列的索引值
   const [country, setCountry] = useState(-1)
 
   return (
