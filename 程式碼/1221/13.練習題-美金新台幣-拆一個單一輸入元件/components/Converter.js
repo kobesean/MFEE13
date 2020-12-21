@@ -37,33 +37,6 @@ function Converter(props) {
           setTwd(usd2Twd(newValue))
         }}
       />
-      {/* 新台幣：
-      <input
-        type="text"
-        value={twd}
-        onChange={(event) => {
-          // 先得到將要變動的值。注意，網頁上輸入為字串，要先轉為數字類型
-          const newValue = +event.target.value
-          // 設定新台幣的值(文字輸入框)
-          setTwd(newValue)
-          // 設定轉換後的美金(文字輸入框)
-          setUsd(twd2Usd(newValue))
-        }}
-      />
-      <hr />
-      美金：
-      <input
-        type="text"
-        value={usd}
-        onChange={(event) => {
-          // 先得到將要變動的值。注意，網頁上輸入為字串，要先轉為數字類型
-          const newValue = +event.target.value
-          // 設定美金的值(文字輸入框)
-          setUsd(newValue)
-          // 設定轉換後的新台幣(文字輸入框)
-          setTwd(usd2Twd(newValue))
-        }}
-      /> */}
     </>
   )
 }
