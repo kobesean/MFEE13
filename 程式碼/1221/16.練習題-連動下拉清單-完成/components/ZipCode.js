@@ -21,6 +21,7 @@ function ZipCode() {
         {/* 預設值為-1 */}
         <option value={-1}>請選擇縣市</option>
         {/* 從countries提取縣市資料，索引值當作option的值 */}
+        {/* key值是react要作最佳化用的 */}
         {countries.map((v, i) => (
           <option value={i} key={i}>
             {v}
