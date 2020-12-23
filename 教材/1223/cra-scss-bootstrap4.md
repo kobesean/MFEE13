@@ -38,6 +38,8 @@ npm install --save bootstrap
 
 ### 全站使用樣式 `index.scss`
 
+
+
 > 在`src`目錄
 
 ```scss
@@ -54,6 +56,8 @@ body {
 ```
 
 ### 自訂樣式 `custom.scss`
+
+建立一個`styles`資料夾，裡面建一個新檔案`custom.scss`
 
 > 在`src/styles`目錄
 
