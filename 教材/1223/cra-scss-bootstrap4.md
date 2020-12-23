@@ -43,8 +43,10 @@ npm install --save bootstrap
 > 在`src`目錄
 
 ```scss
+// 其它自訂樣式
 @import './styles/custom.scss';
 
+// 全站都會使用的共同樣式
 html {
  font-size: 12px;
 }
@@ -64,7 +66,7 @@ body {
 全部導入的情況：
 
 ```scss
-// Import Bootstrap and its default variables
+// 導入bootstrap所有的樣式與預設變數
 @import '~bootstrap/scss/bootstrap.scss';
 
 // 其它要導入覆蓋掉原本的預設bootstrap樣式要放在這下面
