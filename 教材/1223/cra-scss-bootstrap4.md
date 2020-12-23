@@ -66,7 +66,7 @@ body {
 全部導入的情況：
 
 ```scss
-// Import Bootstrap and its default variables
+// 導入bootstrap所有的樣式與預設變數
 @import '~bootstrap/scss/bootstrap.scss';
 
 // 其它要導入覆蓋掉原本的預設bootstrap樣式要放在這下面
