@@ -43,8 +43,10 @@ npm install --save bootstrap
 > 在`src`目錄
 
 ```scss
+// 其它自訂樣式
 @import './styles/custom.scss';
 
+// 全站都會使用的共同樣式
 html {
  font-size: 12px;
 }
