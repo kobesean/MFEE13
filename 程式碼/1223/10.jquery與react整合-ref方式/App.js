@@ -15,18 +15,14 @@ function App() {
   // 模擬componentDidMount
   useEffect(() => {
     // jQuery程式碼需要寫在這裡
-    $('#one').click(() =>
-      alert('(id)textdata is ' + textdata)
-    )
+    $('#one').click(() => alert('(id)textdata is ' + textdata))
   }, [])
 
   // 模擬componentDidMount
   useEffect(() => {
     // jQuery程式碼需要寫在這裡
     // 先用$函式轉為jquery使用的DOM擴充元素，才能使用jquery的方法
-    $(buttonEl.current).click(() =>
-      alert('(ref)textdata is ' + textdata)
-    )
+    $(buttonEl.current).click(() => alert('(ref)textdata is ' + textdata))
   }, [])
 
   return (
