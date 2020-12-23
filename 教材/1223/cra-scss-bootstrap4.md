@@ -11,6 +11,8 @@ npm install node-sass@4.14.1 --save
 yarn add node-sass@4.14.1
 ```
 
+> `yarn remove node-sass` 移除目前的套件
+
 ### 步驟2. 更改 .css 檔案為 .scss
 
 ### 步驟3. 更改所有導入(import)樣式部份使用 .scss
