@@ -1,6 +1,9 @@
 ## 1. 資料載入的樣式
 
-利用bootstrap的spinner元件，或是資料載入的類似react元件(例如：react-spinners)，然後利用setTimeout來模擬從伺服器載入資料，呈現data.js裡的學生資料為表格在網頁上。
+利用bootstrap的spinner元件，或是資料載入的類似react元件(例如：react-spinners)，然後利用setTimeout來模擬從伺服器載入資料：
+
+- 呈現data.js裡的學生資料為表格在網頁上
+- 從localStorage載入計數器資料與儲存
 
 ## 2. 會員註冊與登入表單
 
