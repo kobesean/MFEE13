@@ -11,13 +11,13 @@ function App() {
 
   // componentDidMount
   useEffect(() => {
-    //開始載入資料
+    //開始載入資料，先出現spinner
     setIsLoading(true)
 
-    // 從伺服器得到資料，然後設定到students
+    // 從伺服器得到資料，然後設定到students狀態
     setStudents(data)
 
-    // 最後關起spinner
+    // 最後關起spinner，改呈現真正資料
     setTimeout(() => {
       setIsLoading(false)
     }, 3000)
