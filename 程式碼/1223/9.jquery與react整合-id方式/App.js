@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     // jQuery程式碼需要寫在這裡
     $('#one').click(() => alert('textdata is ' + textdata))
-  }, [textdata])
+  }, [])
 
   return (
     <>
