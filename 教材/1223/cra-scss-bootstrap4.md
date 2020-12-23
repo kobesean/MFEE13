@@ -5,10 +5,10 @@
 ### 步驟1. 安裝node-sass
 ```
 # using npm
-npm install node-sass --save
+npm install node-sass@4.14.1 --save
 
 # using yarn
-yarn add node-sass
+yarn add node-sass@4.14.1
 ```
 
 ### 步驟2. 更改 .css 檔案為 .scss
@@ -16,7 +16,7 @@ yarn add node-sass
 ### 步驟3. 更改所有導入(import)樣式部份使用 .scss
 
 ```js
-import './App.scss'
+import './index.scss'
 ```
 
 > 註：需要yarn start重啟react開發伺服器
