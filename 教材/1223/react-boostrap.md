@@ -29,6 +29,8 @@ npm install react-bootstrap
 
 ### 修改 index.html
 
+> 如果沒有使用bootstrap模組與scss的話，才需要此步驟
+
 因為 React Bootstrap 雖然並沒有依賴任一個 Bootstrap 的版本中的css，但有些樣式仍然是需要使用 Bootstrap 中的css檔案，所以你還是得要加入到你的 index.html檔案之中。
 
 打開專案中的 public 資料夾中的 index.html 檔案，將以下的程式碼加入到<title>標記的前一行即可：
