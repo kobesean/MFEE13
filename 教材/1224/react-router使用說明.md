@@ -67,16 +67,24 @@ Switch元件通常會包裹Route元件，因為路由表的使用方式是用對
 
 ```
 <Switch>
-    <Route path="/about" component={About} />
-    <Route path="/about/contact" component={Contact} />
+    <Route path="/about">
+        <About />
+    </Route>
+    <Route path="/about/contact">
+        <Contact />
+    </Route>
 </Switch>
 ```
 
 上面這個例子，如果網址是`/about`則出現About元件的內容，但如果網址是`/about/contact`則出現Contact元件的內容。
 
 ```
-<Route path="/about" component={About} />
-<Route path="/about/contact" component={Contact} />
+<Route path="/about">
+    <About />
+</Route>
+<Route path="/about/contact">
+    <Contact />
+</Route>
 ```
 
 上面這個例子，如果，如果網址是`/about`則出現About元件的內容，但如果網址是`/about/contact`，則會出現About與Contact元件兩者的內容。
