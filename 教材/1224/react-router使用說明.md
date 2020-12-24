@@ -65,7 +65,7 @@ Route元件是使用來建立路由的對照表，這個元件的可設置屬性
 
 Switch元件通常會包裹Route元件，因為路由表的使用方式是用對照符合(match)的，Switch會從上到下尋找最近的一個，也只會使用一個。以下面的兩個例子來說明有使用Switch元件和沒使用Switch元件的差異：
 
-```
+```jsx
 <Switch>
     <Route path="/about">
         <About />
@@ -78,7 +78,7 @@ Switch元件通常會包裹Route元件，因為路由表的使用方式是用對
 
 上面這個例子，如果網址是`/about`則出現About元件的內容，但如果網址是`/about/contact`則出現Contact元件的內容。
 
-```
+```jsx
 <Route path="/about">
     <About />
 </Route>
@@ -95,7 +95,9 @@ Switch元件通常會包裹Route元件，因為路由表的使用方式是用對
 
 ### 以Link取代a
 
-a元素是網站應用中的連結網頁用元素，Link元件是React Router中用來取代a的元件。
+> 注意：使用`a`與`href`有可能會導致頁面刷新，元件會重新回恢初始狀態，導致應用程式的運作失常，所以請儘可能用Link元件
+
+`a`元素與`href`屬性是網站應用中的連結網頁用元素，Link元件是React Router中用來取代a的元件。
 
 原本的連結應該是像下面這樣：
 
