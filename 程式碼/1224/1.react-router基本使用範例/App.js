@@ -17,11 +17,14 @@ function App() {
   return (
     <Router>
       <>
+        {/* logo+標頭+導覽列 */}
         <MyNavbar />
+        {/* 主內容區 */}
         <MainContent>
           <Link to="/">首頁</Link>
           <Link to="/about">關於我們</Link>
 
+          {/* 以下為匹配路徑對用頁面用的路由列表 */}
           <Switch>
             <Route path="/about">
               <About />
@@ -30,8 +33,9 @@ function App() {
               <Home />
             </Route>
           </Switch>
-          
+          {/* end 路由表 */}
         </MainContent>
+        {/* 頁尾 */}
         <MyFooter />
       </>
     </Router>
