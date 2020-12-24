@@ -133,28 +133,20 @@ Link元件中除了可以像a元素中，使用id、title、className等屬性�
 範例:
 
 ```js
-import React from "react";
-import PropTypes from "prop-types";
-import { withRouter } from "react-router";
+import React, { useState, useEffect } from 'react'
+import { Link, Switch, withRouter } from 'react-router-dom'
 
-// A simple component that shows the pathname of the current location
-class ShowTheLocation extends React.Component {
-  static propTypes = {
-    match: PropTypes.object.isRequired,
-    location: PropTypes.object.isRequired,
-    history: PropTypes.object.isRequired
-  };
-
-  render() {
-    const { match, location, history } = this.props;
-
-    return <div>You are now at {location.pathname}</div>;
-  }
+function Product(props) {
+  console.log(props)
+  return (
+    <>
+      <h1>Product</h1>
+      <h3>{props.match.params.id}</h3>
+    </>
+  )
 }
 
-// Create a new component that is "connected" (to borrow redux
-// terminology) to the router.
-const ShowTheLocationWithRouter = withRouter(ShowTheLocation);
+export default withRouter(Product)
 ```
 
 ### Hooks(勾子)
